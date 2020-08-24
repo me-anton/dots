@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+feh --bg-fill ~/Pictures/wallpaper.*
+if [ "$1" = "-c" ]; then
+	killall -q compton; compton -b --config ~/.config/compton/compton.conf
+fi
+/bin/bash ~/.config/polybar/launch.sh

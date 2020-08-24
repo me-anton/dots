@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PyCharm Professional
+Icon=/home/mean/.jetbrains/PyCharm2020.2/bin/pycharm.svg
+Exec="/home/mean/.jetbrains/PyCharm2020.2/bin/pycharm.sh" %f
+Comment=For both Scientific and Web Python development
+Categories=Development;IDE;python;
+Terminal=false
+StartupWMClass=jetbrains-pycharm

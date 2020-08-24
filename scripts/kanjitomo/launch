@@ -1,0 +1,4 @@
+#!/bin/bash
+
+java -Xmx1200m -jar /home/mean/scripts/kanjitomo/KanjiTomo.jar -run
+

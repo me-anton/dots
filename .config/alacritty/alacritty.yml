@@ -1,0 +1,341 @@
+# Shades of Purple Alacritty
+# https://github.com/ahmadawais/shades-of-purple-alacritty
+
+# Colors
+colors:
+    # Default colors
+    primary:
+        background: '#1E1E3F'
+        foreground: '#FFFFFF'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+        text: '#1E1E3F'
+        cursor: '#FAD000'
+
+    # Normal colors
+    normal:
+        black: '#000000'
+        red: '#D52822'
+        green: '#3DB72A'
+        yellow: '#FAD000'
+        blue: '#6943FF'
+        magenta: '#FF628C'
+        cyan: '#9EFFFF'
+        white: '#DBDBE0'
+
+    # Bright colors
+    bright:
+        black: '#5C5C61'
+        red: '#FF000D'
+        green: '#3AD900'
+        yellow: '#FAD000'
+        blue: '#6943FF'
+        magenta: '#FF628C'
+        cyan: '#9EFFFF'
+        white: '#FFFFFF'
+
+#######################################################################################################################
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    # family: SauceCodePro Nerd Font
+    # family: CodeNewRoman Nerd Font
+    # family: RobotoMono Nerd Font
+    # family: Hack
+    # family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
+    # family: Monofur Nerd Font
+    # family: TerminessTTF Nerd Font
+    # family: Mononoki Nerd Font
+    family: Monospaceland Nerd Font Mono
+
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+
+  # Bold font face
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    # family: SauceCodePro Nerd Font
+    # family: CodeNewRoman Nerd Font
+    # family: RobotoMono Nerd Font
+    # family: Hack
+    # family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
+    # family: Monofur Nerd Font
+    # family: TerminessTTF Nerd Font
+    # family: Mononoki Nerd Font
+    family: Monospaceland Nerd Font Mono
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    # family: SauceCodePro Nerd Font Mono
+    # family: CodeNewRoman Nerd Font
+    # family: RobotoMono Nerd Font
+    # family: Hack
+    # family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
+    # family: Monofuritalic Nerd Font Mono
+    # family: TerminessTTF Nerd Font
+    # family: Mononoki Nerd Font
+    family: Monospaceland Nerd Font Mono
+
+    style: Oblique
+
+  bold_italic:
+    # If the bold italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    # family: SauceCodePro Nerd Font Mono
+    # family: CodeNewRoman Nerd Font
+    # family: RobotoMono Nerd Font
+    # family: Hack
+    # family: JetBrains Mono
+    # family: UbuntuMono Nerd Font
+    # family: Monofuritalic Nerd Font Mono
+    # family: TerminessTTF Nerd Font
+    # family: Mononoki Nerd Font
+    family: Monospaceland Nerd Font Mono
+
+    style: Bold Oblique
+
+
+
+  # Point size
+  size: 14.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  offset:
+    x: 1
+    y: 1
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
+
+#######################################################################################################################
+window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
+
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 0
+  #  y: 0
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 14
+    y: 11
+
+  # Spread additional padding evenly around the terminal content.
+  #dynamic_padding: false
+
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background, but no title bar buttons
+  #decorations: full
+
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  #startup_mode: Windowed
+
+  # Window title
+  title: Alacritty
+
+  
+# Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: alacritty
+    # General application class
+    general: alacritty
+
+
+
+#######################################################################################################################
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 5000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  #multiplier: 3
+
+
+
+#######################################################################################################################
+# Key bindings
+#
+# Key bindings are specified as a list of objects. For example, this is the
+# default paste binding:
+#
+# `- { key: V, mods: Control|Shift, action: Paste }`
+#
+# Each key binding will specify a:
+#
+# - `key`: Identifier of the key pressed
+#
+#    - A-Z
+#    - F1-F24
+#    - Key0-Key9
+#
+#    A full list with available key codes can be found here:
+#    https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants
+#
+#    Instead of using the name of the keys, the `key` field also supports using
+#    the scancode of the desired key. Scancodes have to be specified as a
+#    decimal number. This command will allow you to display the hex scancodes
+#    for certain keys:
+#
+#       `showkey --scancodes`.
+#
+# Then exactly one of:
+#
+# - `chars`: Send a byte sequence to the running application
+#
+#    The `chars` field writes the specified string to the terminal. This makes
+#    it possible to pass escape sequences. To find escape codes for bindings
+#    like `PageUp` (`"\x1b[5~"`), you can run the command `showkey -a` outside
+#    of tmux. Note that applications use terminfo to map escape sequences back
+#    to keys. It is therefore required to update the terminfo when changing an
+#    escape sequence.
+#
+# - `action`: Execute a predefined action
+#
+#   - Copy
+#   - Paste
+#   - PasteSelection
+#   - IncreaseFontSize
+#   - DecreaseFontSize
+#   - ResetFontSize
+#   - ScrollPageUp
+#   - ScrollPageDown
+#   - ScrollLineUp
+#   - ScrollLineDown
+#   - ScrollToTop
+#   - ScrollToBottom
+#   - ClearHistory
+#   - Hide
+#   - Minimize
+#   - Quit
+#   - ToggleFullscreen
+#   - SpawnNewInstance
+#   - ClearLogNotice
+#   - ReceiveChar
+#   - None
+#
+#   (macOS only):
+#   - ToggleSimpleFullscreen: Enters fullscreen without occupying another space
+#
+# - `command`: Fork and execute a specified command plus arguments
+#
+#    The `command` field must be a map containing a `program` string and an
+#    `args` array of command line parameter strings. For example:
+#       `{ program: "alacritty", args: ["-e", "vttest"] }`
+#
+# And optionally:
+#
+# - `mods`: Key modifiers to filter binding actions
+#
+#    - Command
+#    - Control
+#    - Option
+#    - Super
+#    - Shift
+#    - Alt
+#
+#    Multiple `mods` can be combined using `|` like this:
+#       `mods: Control|Shift`.
+#    Whitespace and capitalization are relevant and must match the example.
+#
+# - `mode`: Indicate a binding for only specific terminal reported modes
+#
+#    This is mainly used to send applications the correct escape sequences
+#    when in different modes.
+#
+#    - AppCursor
+#    - AppKeypad
+#    - Alt
+#
+#    A `~` operator can be used before a mode to apply the binding whenever
+#    the mode is *not* active, e.g. `~Alt`.
+#
+# Bindings are always filled by default, but will be replaced when a new
+# binding with the same triggers is defined. To unset a default binding, it can
+# be mapped to the `ReceiveChar` action. Alternatively, you can use `None` for
+# a no-op if you do not wish to receive input characters for that binding.
+key_bindings:
+    # (Windows, Linux, and BSD only)
+  - { key: V,        mods: Control|Shift, action: Paste            }
+  - { key: C,        mods: Control|Shift, action: Copy             }
+#  - { key: Insert,   mods: Shift,         action: PasteSelection   }
+  - { key: Slash,    mods: Control,       action: ResetFontSize    }
+
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+
+  - { key: Add,      mods: Control,       action: IncreaseFontSize }
+  - { key: Add,      mods: Control,       action: IncreaseFontSize }
+
+  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
+
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
+  - { key: Paste,                    action: Paste                            }
+  - { key: Copy,                     action: Copy                             }
+  - { key: L,         mods: Control, action: ClearLogNotice                   }
+  - { key: L,         mods: Control, chars: "\x0c"                            }
+  - { key: PageUp,    mods: Control,   action: ScrollPageUp,   mode: ~Alt       }
+  - { key: PageDown,  mods: Control,   action: ScrollPageDown, mode: ~Alt       }
+  - { key: Home,      mods: Control,   action: ScrollToTop,    mode: ~Alt       }
+  - { key: End,       mods: Control,   action: ScrollToBottom, mode: ~Alt       }
+
+
+
+

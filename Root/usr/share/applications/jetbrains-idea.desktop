@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IntelliJ IDEA Ultimate Edition
+Icon=/home/mean/.jetbrains/IntelliJIdea2020.2/bin/idea.svg
+Exec="/home/mean/.jetbrains/IntelliJIdea2020.2/bin/idea.sh" %f
+Comment=Capable and Ergonomic IDE for JVM
+Categories=Development;IDE;java;
+Terminal=false
+StartupWMClass=jetbrains-idea

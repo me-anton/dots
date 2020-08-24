@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+cd /home/mean/.config/autorandr/
+gpu_mode=$(optimus-manager --print-mode | awk '{print $5}')
+
+function delete_links() {
+	rm external internal double
+}
+
+if [ $gpu_mode == nvidia ]; then
+	delete_links
+	ln -s /home/mean/.config/autorandr/external_nvidia/ /home/mean/.config/autorandr/external
+	ln -s /home/mean/.config/autorandr/internal_nvidia/ /home/mean/.config/autorandr/internal
+	ln -s /home/mean/.config/autorandr/double_nvidia/ /home/mean/.config/autorandr/double
+elif [ $gpu_mode == intel ]; then
+	delete_links
+	ln -s /home/mean/.config/autorandr/external_intel/ /home/mean/.config/autorandr/external
+	ln -s /home/mean/.config/autorandr/internal_intel/ /home/mean/.config/autorandr/internal
+	ln -s /home/mean/.config/autorandr/double_intel/ /home/mean/.config/autorandr/double 
+else 
+	notify-send -u critical "Can't define active gpu"
+fi

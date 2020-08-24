@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=KanjiTomo
+GenericName=Japanese OCR
+Comment=A program for identifying Japanese characters from images
+Exec=/home/mean/scripts/kanjitomo/launch
+Terminal=false
+Type=Application
+Icon=kanjitomo
+Categories=Education;Languages;Japanese
