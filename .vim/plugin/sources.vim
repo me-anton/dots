@@ -1,0 +1,2 @@
+so ~/.vim/sets.vim
+

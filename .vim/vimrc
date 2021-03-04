@@ -1,0 +1,15 @@
+
+call plug#begin()
+
+Plug 'Rigellute/shades-of-purple.vim'
+
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
+
+
+" Activate colorsceme
+set termguicolors
+syntax enable
+colorscheme shades_of_purple
+
